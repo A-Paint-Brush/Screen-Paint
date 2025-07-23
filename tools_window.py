@@ -8,7 +8,7 @@ import path
 class tools(tkinter.Toplevel):
     def __init__(self, root, event_w):
         super().__init__(root)
-        self.iconbitmap(path.resource_path("Images\\Icon.ico"))
+        self.iconbitmap(path.resource_path("Images/Icon.ico"))
         self.title("Tools")
         self.event_w = event_w
         self.canvas_w = None
@@ -48,7 +48,7 @@ class tools(tkinter.Toplevel):
 
     def set_tools(self, images, callback, quit_callback):
         for btn in range(0, len(images)):
-            self.images.append(tkinter.PhotoImage(file=path.resource_path(".\\Images\\{}".format(images[btn]))))
+            self.images.append(tkinter.PhotoImage(file=path.resource_path("./Images/{}".format(images[btn]))))
             self.btn_list.append(tkinter.Button(self,
                                                 image=self.images[btn],
                                                 command=functools.partial(callback, images[btn][0:-4])))

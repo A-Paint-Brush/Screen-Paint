@@ -5,7 +5,7 @@ import path
 class c_window(tkinter.Toplevel):
     def __init__(self, root, event_w, tools_w):
         super().__init__(root)
-        self.iconbitmap(path.resource_path("Images\\Icon.ico"))
+        self.iconbitmap(path.resource_path("Images/Icon.ico"))
         self.event_w = event_w
         self.tools_w = tools_w
         self.canvas = tkinter.Canvas(self, bg="#DDDDDD", highlightthickness=0)

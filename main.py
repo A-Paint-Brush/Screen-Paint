@@ -7,7 +7,7 @@ import path
 class main_window(tkinter.Tk):
     def __init__(self):
         super().__init__()
-        self.iconbitmap(path.resource_path("Images\\Icon.ico"))
+        self.iconbitmap(path.resource_path("Images/Icon.ico"))
         self.title("Paint")
         self.geometry("200x100")
         self.minsize(200, 100)

@@ -9,7 +9,7 @@ class e_window(tkinter.Toplevel):
     def __init__(self, root):
         self.tools = tools_window.tools(root, self)
         super().__init__(root)
-        self.iconbitmap(path.resource_path("Images\\Icon.ico"))
+        self.iconbitmap(path.resource_path("Images/Icon.ico"))
         self.done = False
         self.line_list = []
         self.id_list = []
